@@ -1,22 +1,25 @@
 {
-  "name": "spacex-launch-stats",
+  "name": "spacex_launch_stats",
   "version": "1.0.0",
-  "description": "App list of spacex launch mission details",
+  "description": "App that lists SpaceX launch missions",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "devendra",
+  "author": "Devendra",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
-    "express": "^4.17.1",
-    "express-graphql": "^0.11.0",
-    "graphql": "^15.3.0",
-    "graphql-express": "^2.0.2"
+    "axios": "^0.18.0",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-graphql": "^0.7.1",
+    "graphql": "^14.0.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^1.18.6"
   }
 }
