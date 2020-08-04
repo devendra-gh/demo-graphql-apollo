@@ -1,7 +1,7 @@
 {
-  "name": "spacex_launch_stats",
+  "name": "spacex-launch-stats",
   "version": "1.0.0",
-  "description": "App that lists SpaceX launch missions",
+  "description": "Demo for GraphQL, Apollo, NodeJS, ReactJS",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
